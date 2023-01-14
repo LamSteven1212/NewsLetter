@@ -1,0 +1,48 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+  <title>Newsletter Signup</title>
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+
+  <!-- Bootstrap core CSS -->
+  <!-- Latest compiled and minified CSS + How to link BootStrap to your file (get CDN)-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Custom styles for this template + Provide the path of the static folders-->
+  <!-- if you just copy template code, it won't look like what you see on website, because there was some
+     CSS applied which needs to be applied on our page -->
+  <!-- Following line include link to our styles.css file, which contains all of theses modification -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Link Fo nt Awesome -->
+  <script src="https://kit.fontawesome.com/4987790ee8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="text-center">
+  <!-- for our post request to happen add "method" = POST + Specify location where you are sending request to do, which is the homeroute in this case -->
+  <!-- POST ensures that when a user enter the submit button, that the info in boxes gets posted to homroute -->
+  <form action="/" class="form-signin" method="POST">
+    <!-- Include the image of choice -->
+    <i class="fa-solid fa-envelope"></i>
+    <h1 class="h3 mb-3 font-weight-normal">Signup to My Newsletter!</h1>
+
+    <!-- add name to variables to be able to refer to them in app.js file -->
+    <!-- adding 3 different inputs that user must enter -->
+    <input type="text" name="fName" class="form-control top" placeholder="First Name" required autofocus>
+    <input type="text" name="lName" class="form-control middle" placeholder="Last Name" required>
+    <input type="email" name="email" class="form-control bottom" placeholder="Email" required>
+
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Me Up!</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Steven's News Letter</p>
+  </form>
+
+
+</body>
+
+</html>
